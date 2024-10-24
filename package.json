@@ -1,0 +1,51 @@
+{
+  "name": "meta-health-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8080 --turbo",
+    "build": "next build",
+    "start": "next start -p 8080",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@hookform/resolvers": "^3.3.4",
+    "@mui/icons-material": "^5.14.0",
+    "@mui/joy": "^5.0.0-beta.31",
+    "@mui/material": "^5.14.0",
+    "@mui/system": "^5.4.1",
+    "@mui/x-data-grid": "^6.10.0",
+    "@next/third-parties": "^14.2.3",
+    "@tanstack/react-query": "^4.29.25",
+    "@tanstack/react-table": "^8.14.0",
+    "@tanstack/react-virtual": "^3.2.0",
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "@types/react-dom": "18.2.7",
+    "@uidotdev/usehooks": "^2.0.1",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.45.0",
+    "eslint-config-next": "^14.1.4",
+    "lodash": "^4.17.21",
+    "next": "^14.1.4",
+    "node": "^18.20.0",
+    "postcss": "8.4.26",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.0",
+    "react-qr-code": "^2.0.12",
+    "react-qr-rounded": "^1.0.0",
+    "react-swipeable": "^7.0.1",
+    "react-type-animation": "^3.2.0",
+    "sharp": "^0.32.5",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6",
+    "zod": "^3.22.4",
+    "zustand": "^4.3.9"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.0"
+  }
+}

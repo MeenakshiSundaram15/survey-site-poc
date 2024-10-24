@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Play:wght@400;700&display=swap" rel="stylesheet');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    /* @apply font-worksans; */
+    @apply text-wild-rice;
+    font-optical-sizing: auto;
+    font-style: normal;
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+    height: 100%;
+    @apply bg-base-color;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    padding: env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px)
+      env(safe-area-inset-left, 20px);
+  }
+}
+
+:root {
+  --scrollbar-size: 4px;
+  --base-color: #fffdf8;
+  --mobile-navbar-height: 36px;
+  --desktop-navbar-height: 124px;
+  --navbar-height: 36px;
+}
+
+* {
+  min-width: 0;
+}
+
+body.secondary-bg {
+  --base-color: #fbf2e7;
+}
+
+.highlightable-highlighted {
+  outline: #ff00f2 solid 1px;
+  outline-offset: 2px;
+}
+
+/* Mobile Overrides */
+@media (min-width: 1280px) {
+  :root {
+    --navbar-height: 124px;
+  }
+}
+
+*::-webkit-scrollbar-track {
+  /* @apply bg-core-spinach/75; */
+  @apply bg-oatmeal;
+}
+
+* {
+  min-width: 0;
+}
+
+*.hide-scrollbar {
+  --scrollbar-size: 0;
+}
+*::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1); */
+  /* @apply bg-core-spinach; */
+  @apply bg-quinoa;
+}
